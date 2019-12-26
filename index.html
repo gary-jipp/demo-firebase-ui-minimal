@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase Example</title>
+
+	<link type="text/css" rel="stylesheet" href="index.css"/> 
+</head>
+
+<body>
+  <div id="firebaseui-auth-container">
+    <!-- This is where the Login ui will load -->
+  </div>
+	<div id="loader">Loading...</div>
+
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+		<!-- We are using firebase-auth -->
+		<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+
+	<script>
+	const firebaseConfig = {
+
+    //  Your firebase config goes here.  Easy to get once you create a free firebase account
+
+		};
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+	</script>
+
+    <!-- Firebase UI runs on top of firebase-auth  -->
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet"href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/> 
+
+  <!-- Our custom stuff -->
+  <script src="./auth.js"></script>
+
+</body>
+</html>
